@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-
+<html lang="en">
+<head>
+<title>ParticleCat314</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
     @keyframes textShadow {
@@ -17,20 +21,11 @@
     body {
         background-image: linear-gradient(rgb(56, 27, 136),rgba(16, 161, 149, 0.75)100%);
         height: 100vh;
+        margin: 0;
+        overflow: hidden;
     }
 
-    .screen {
-        background-image: radial-gradient(rgba(230, 203, 230, 0.75),black 120%);
-        height: 100vh;
-    }
 
-    .crt {
-        font: 2.0rem Inconsolata, monospace;
-        margin: 50px;
-        text-shadow: 0 0 10px #f0c4c4;
-        
-        animation: textShadow 1.6s infinite;
-    }
 
     @keyframes flicker {
         0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -86,19 +81,43 @@
         }
     }
 
-    
-
+    .header {
+        padding: 60px;
+        text-align: center;
+        background-color: rgba(0, 66, 104, 0.527);
+        color: white;
+    }
+    .content {
+        padding: 60px;
+        text-align: center;
+        background-color: rgba(255, 166, 0, 0.527);
+        color: white;
+        font-size: 35px;
+        height: 100%;
+    }
 
 </style>
-
+</head>
 
 
 <body>
     
-    <h1>This page does stuff?<h1>
+    <div class="header">
+        <h1 style="font-size: 50px;">Some Random Page</h1>
+        <h2>A website made with love & no creative skill whatsoever</h2>
+    </div>
+    <div class="content">
+        <p style="font-size: 20px;">Random Projects & interesting things:</p>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </div>
 
 
-    <p class="neon">ParticleCat314</p>
+    
+
+
+    <p class="neon">Made by ParticleCat314</p>
 </body>
 
 
