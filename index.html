@@ -4,6 +4,11 @@
 <title>ParticleCat314</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 <style>
 
     @keyframes textShadow {
@@ -96,6 +101,15 @@
         height: 100%;
     }
 
+    .bullet {
+        font-size: smaller;
+    }
+    .bullet:hover {
+        transition: 1s;
+        font-size: larger;
+        color: rgb(0, 255, 85);
+    }
+
 </style>
 </head>
 
@@ -108,9 +122,9 @@
     </div>
     <div class="content">
         <p style="font-size: 20px;">Random Projects & interesting things:</p>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
+        <li class="bullet">\(\pi\)</li>
+        <li class="bullet">B</li>
+        <li class="bullet">C</li>
     </div>
 
 
