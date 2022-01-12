@@ -117,11 +117,10 @@
 
 
 <body>
-    
     <div class="header">
-        <h1 style="font-size: 50px;">Some Random Page</h1>
-        <h2>A website made with love & no creative skill whatsoever</h2>
-        <h3>Also a WIP user page / personal project archive cause I have no idea...</h3>
+        <h1 id="title1" style="font-size: 50px;">Some Random Project Page</h1>
+        <h2 id="title2">A website made with love & no creative skill whatsoever</h2>
+        <h3 id="title3">Also a WIP user page / personal project archive cause I have no idea...</h3>
     </div>
     <div class="content">
         <p style="font-size: 28px;">Random Projects & interesting things:</p>
@@ -132,14 +131,10 @@
         <li class="bullet"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Rick-roll</a></li>
         <li class="bullet"><a href="cube.html">Rubiks cube simulation - WIP</a></li>
         <li class="bullet">I bet you noticed that none of these links work... yet</li>
-
-
     </div>
 
     <p class="neon">Made by ParticleCat314</p>
 </body>
-
-
 
 <script>
     
@@ -162,8 +157,27 @@
         }
     },100)
 
+/*
+    function letterRandom(n){
+        var msg1 = "Some Random Page";
+        var randoms = ['a','b','c','d','e','f','!','@','#','$','%','^','&','*','m','n','b','v','c','x','z','l','k'];
+        var title = document.getElementById("title1");
+        randoms.sort(() => .5 - Math.random()).slice(0,msg1.length-n);
+        return text = msg1.slice(0,n)+(randoms.slice(0,msg1.length-n)).join();
+
+    }
 
 
 
+    letterRandom();
+
+    for (var n = 0; n<16+1; n++){
+           //console.log(text);
+            
+            setTimeout(() => console.log(letterRandom(n)),500*n);
+            setTimeout(() => title.textContent = text,500*n);
+
+    }
+*/
 
 </script>
